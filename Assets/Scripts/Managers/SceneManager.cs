@@ -74,8 +74,6 @@ public class SceneManager : SingletonMonoBehaviour<SceneManager>
         rect.anchorMax = Vector2.one;
         rect.offsetMin = Vector2.zero;              //offset 각 앵커 기준으로 얼마나 떨어져 있는지 설정 (딱 붙어있도록)
         rect.offsetMax = Vector2.zero;
-
-        DontDestroyOnLoad(fadeObject);
     }
 
     #endregion
