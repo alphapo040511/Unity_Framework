@@ -60,8 +60,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         yield return new WaitForEndOfFrame();                   // 현재 프레임 랜더링이 끝난 후 다른 매니저 확인
 
         // 매니저들 초기화 순서 중요
-        //if (SceneManager.Instance != null)
-        //    Debug.Log("SceneManager 연결 확인");
+        if (SceneManager.Instance != null)
+            Debug.Log("SceneManager 연결 확인");
         //if (SoundManager.Instance != null)
         //    Debug.Log("SoundManager 연결 확인");
         //if (UIManager.Instance != null)
