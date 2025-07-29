@@ -107,19 +107,14 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         switch (newState)
         {
             case GameState.Menu:
-                Time.timeScale = 1f;
                 break;
             case GameState.Playing:
-                Time.timeScale = 1f;
                 break;
             case GameState.Paused:
-                Time.timeScale = 0f;
                 break;
             case GameState.GameOver:
-                Time.timeScale = 0f;
                 break;
             case GameState.Loading:
-                Time.timeScale = 1f;
                 break;
         }
     }
